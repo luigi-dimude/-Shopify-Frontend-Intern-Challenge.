@@ -1,0 +1,300 @@
+/* Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* background-image: linear-gradient(to right, #f9f9f9, #fafbfa, #fcfcfc, #fdfefd, #ffffff); */
+    background: #0e2439;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  ::selection {
+    background-color: #f15c41;
+  }
+
+/* ---------------------------------------------------------------- */
+
+  /* Utilities */
+  .card {
+    max-width: 400px;
+    background-color: #1f364d;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 3px;
+    font-size: .9em;
+    box-shadow: 0 0 5px #0b1c2d;
+    transition: all 180ms;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  .insert-banner {
+      min-height: 4em;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
+  .error {
+      color: #ff3232;
+  }
+
+  .message {
+    padding: .7rem;
+    background: #f15c41;
+    color: #fff;
+    width: 340px;
+    text-align: center;
+    border-radius: 4px;
+    margin: auto;
+
+}
+
+  /* ---------------------------------------------------------------- */
+
+  /* Search-movie */
+
+  #search-movie {
+      margin: 4em 0 2.3em 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .heading {
+    font-weight: 200;
+    font-size: 4em;
+  }
+  .search-bar {
+    margin-top: 1em;
+    width: 40%;
+    padding: 1.2em 1em;
+    background-color: #1f364d;
+    transition: all 180ms;
+    font-size: 1.5em;
+    color: #FFF;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 0 5px #0b1c2d;
+    /* border-bottom: 2px solid #008060; */
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right,#e052a0,#f15c41);
+        border-image-slice: 1;
+    font-weight: 200;
+  }
+  ::placeholder {
+    color: rgb(236, 232, 232);
+  }
+
+  .search-bar:hover {
+    background-color: #2b445c;
+  }
+
+  /* ---------------------------------------------------------------- */
+
+  /* Movie */
+  #movie {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      text-align: center;
+      min-height: 27em;
+      margin-bottom: 3em;
+      }
+  #movie .card:hover {
+      background-color: #2b445c;
+      }
+  #movie .card .banner {
+    background-image: url(img/parasite.jpg);
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 24.6rem;
+}
+
+#movie .info {
+    margin-top: .2em;
+    padding: .6em;
+}
+#movie p {
+    color: #FFF;
+}
+
+#movie a {
+    color: #FFF;
+    display: inline-block;
+    padding: .6em 1.2em;
+    margin: .7em;
+    text-align: center;
+    border: 0;
+    font-size: 1.1rem;
+    border-radius: .4rem;
+    text-decoration: none;
+    background: linear-gradient(to right,#e052a0,#f15c41);
+    cursor: pointer;
+
+}
+
+#movie a:hover {
+    background: linear-gradient(to right,#3EC6E0,#526DF4);
+}
+
+#movie em {
+    font-weight: 300;
+}
+
+#movie div {
+    display: none;
+}
+
+#movie a.disabled {
+    background: #999999;
+    color: #d1e2de;
+    cursor: default;
+
+}
+
+/* ---------------------------------------------------------------- */
+
+/* movie list */
+#movie-list {
+/* temp */
+margin-bottom: 50em;
+min-height: 13em;
+}
+#movie-list table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #FFF;
+    
+}
+#movie-list table thead {
+    border: 3px solid #1f364d;
+    border-bottom: 2px solid #1f364d;
+
+}
+#movie-list table th {
+    padding: 1.2rem;
+    border: 3px solid #1f364d;
+    color: #FFF;
+    font-weight: bold;
+
+}
+#movie-list table td {
+    text-align: center;
+    padding: 1.2rem;
+    border: 3px solid #1f364d;
+
+}
+
+.movie-title {
+    display: inline-block;
+}
+
+.fas,
+.btn-view {
+    color: #f15c41;
+    background-color: #2b445c;
+    padding: .4em .4em;
+    margin-right: .3em;
+    font-size: 1.1em;
+}
+.btn-view {
+    color: #FFF;
+    padding: .2em .4em;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
+/* Modal */
+#modal {
+    /* background: rgba(0,0,0,0.3); */
+    position: absolute;
+    top: 0;
+    color: #111;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-card {
+    background-color:#274059;
+    border: 1x solid#333;
+    box-shadow: 0 5px 15px rgba(68, 45, 46, 0.5);
+    padding: 5rem;
+    color: #333;
+    text-align: center;
+    display: flex;
+    position: relative;
+    border-radius: 1.1rem;
+}
+
+
+#modal-img {
+    /* background-image: url(img/parasite.jpg); */
+    /* display: block; */
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 26rem;
+}
+.modal-card .modal-info {
+    background: #274059;
+}
+.modal-card .modal-info p {
+    padding: .3rem;
+    font-size: 1.1em;
+    color: #FFF;
+}
+
+
+.modal-card .close-modal {
+    color: #111;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 1.5rem;
+    background: #DCDCDC;
+    padding: .3rem .5rem;
+}
+.modal-card .close-modal:hover {
+    color: #ad2929de;
+}
+
+.modal-card #modal-title  {
+    color: #f15c41;
+    font-size: 1.9rem;
+    font-weight: bold;
+
+}
+/* ---------------------------------------------------------------- */
