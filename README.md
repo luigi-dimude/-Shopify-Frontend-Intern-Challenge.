@@ -1,6 +1,6 @@
 
 
-# -Shopify-Frontend-Intern-Challenge.
+# Shopify Frontend Intern Challenge.
 
 Live demo - https://www.luigidimude.com/shopify/index.html
 
