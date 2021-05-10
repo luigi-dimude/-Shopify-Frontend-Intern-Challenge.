@@ -17,5 +17,9 @@
 - Jquery
 
 
+**Sample UI of APP**
+
+![](img/sample.PNG)
+
 
 
