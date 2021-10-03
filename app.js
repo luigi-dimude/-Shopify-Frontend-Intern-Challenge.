@@ -43,7 +43,7 @@ $(document).ready(function() {
     })(jQuery);
 
     // API KEY 
-    var apiKey = '635293c0';
+    var apiKey = '********';
    
     // Event listener for search bar
     $(".search-bar").on('keypress',function(e) {
