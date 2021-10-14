@@ -1,7 +1,7 @@
 
 # Shopify Frontend Intern Challenge.
 
-**Live demo** - https://www.luigidimude.com/shopify/index.html
+**Live demo** - https://luigi-movieapp.netlify.app
 
  a webpage that can search OMDB for movies, and allow the user to save their favourite films they feel should be up for nomination. When they've selected 5 nominees they should be notified they're finished.
  
