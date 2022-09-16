@@ -25,11 +25,11 @@
 - Display a banner when the user has 5 nominations and disable search button.
 
 **Tech used**
-- React.js (Hooks)
+- React.js
 - Redux
 - Axios
 - Styled Components
-- Flexbox
+- Material UI
 - OMDB API
 
 
