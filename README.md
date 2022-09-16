@@ -26,8 +26,9 @@
 
 **Tech used**
 - React.js (Hooks)
-- Dot ENV 
+- Redux
 - Axios
+- Styled Components
 - Flexbox
 - OMDB API
 
@@ -35,6 +36,11 @@
 **Sample UI of APP**
 
 ![](img/sample.PNG)
+
+
+**Version 2 in progress** 
+
+![Screenshot 2022-09-15 at 11 05 50 PM](https://user-images.githubusercontent.com/33835722/190548272-612caa57-22e7-4c73-a5d8-7ffb7bda1fea.png)
 
 
 
